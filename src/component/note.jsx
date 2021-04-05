@@ -1,11 +1,12 @@
 import React from "react";
 
-function Note() {
+function Note(params)
+{
   return (
     <dib className="note">
-      <h1>This is a note</h1>
+      <h1>{params.title}</h1>
       <p>
-        The quick brown fox jumps over the lazy dog. This is the description
+        {params.description}
       </p>
     </dib>
   );
